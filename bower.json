@@ -1,0 +1,16 @@
+{
+  "name": "angular-cors-ie9",
+  "main": "dist/angular-cors-ie9.js",
+  "version": "0.1.2",
+  "homepage": "https://github.com/baki250/angular-ie9-cors-fix",
+  "authors": [
+    "Baki Toktas <baki250@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "Gruntfile.coffee",
+    "*.json"
+  ]
+}
