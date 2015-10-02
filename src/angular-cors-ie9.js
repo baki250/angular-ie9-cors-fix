@@ -23,9 +23,14 @@ var IE9Fix = function() {
     var host = window.location.origin
       .replace('http://', '')
       .replace('https://', '');
+       
+    //separate hostname for comparism as complete url may contain origin host (ie. as get param)
+    var l = document.createElement("a");
+    l.href = requestUrl;
+    var requestedHost = l.hostname; 
 
     //if host is found, then not XDomain
-    if (requestUrl.indexOf(host) > -1) {
+    if (requestedHost.indexOf(host) > -1) {
       return false;
     }
     //check for relative url
